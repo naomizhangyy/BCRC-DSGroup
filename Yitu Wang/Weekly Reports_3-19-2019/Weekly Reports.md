@@ -6,5 +6,5 @@ in detail, <Hypar: Towards Hybrid Parallelism for Deep Learning Accelerator Arra
 parallelism for the level of accelerator and the process of trainig rather than just focusing on the data parrallelsim for computation 
 for inference. It is novel and fresh because few papers work on designing architecture for the process of training.
 
-The notes for the two papers mentioned above have been uploaded in the form of powerpoints in the Weekly Reports_3-19-2019 folder.
+The detailed notes for the two papers mentioned above have been uploaded in the form of powerpoints in the Weekly Reports_3-19-2019 folder.
 --------------------
