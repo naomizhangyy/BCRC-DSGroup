@@ -5,3 +5,5 @@ for inference. It is novel and fresh because few papers work on designing archit
 
 The detailed notes for the two papers and the papers themselves mentioned above have been uploaded in the form of powerpoints and pdf, respetively, in the Weekly Reports_3-19-2019 folder.
 --------------------
+
+Maybe you should click 'view raw' or download the attachments if you want to see them.
