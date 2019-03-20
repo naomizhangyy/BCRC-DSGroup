@@ -1,0 +1,10 @@
+2019/03/20
+1.Finish Tanji3 DLA documents writing, include control module of LPE, control module of APE and the top module of control. The documents will be uploaded.
+2.Study base 2 FFT algorithm that extracted by frequncy and base 4 FFT algorithm that extracted by time(base 4 FFT algorithm further reduce the computation complexity compared with base 2 FFT algorithm) in order to have a deeper understanding on Tingshua's Paper on ISSCC2019.
+  a.Based on CirCNN
+  b.Use FFT to compute convolution in CirCNN model
+3.Read ISSCC2019 Paper "An 11.5TOPS/W 1024-MAC BUtterfly Structure Dual-Core Sparsity-Aware Neural Processing Unit in 8nm Flagship Mobile Soc":
+  a.Moving Output Feature Maps to compute convolution
+  b.Butterfly-Structure Dual-Core Accelerator
+  c.Sparsity-Aware Computing:Using Feature Selection
+4.Prepare the slide about accelerator based on Winograd Convolution.The Slides Will be uploaded.
