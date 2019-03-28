@@ -8,3 +8,19 @@
   b.Butterfly-Structure Dual-Core Accelerator
   c.Sparsity-Aware Computing:Using Feature Selection
 4.Prepare the slide about accelerator based on Winograd Convolution.The Slides Will be uploaded.
+2019/03/28
+1.Read Paper "FPGA based efficient on-chip memory for image processing algorithms" to learn several main data access policies for image processing algorithms.
+  a.Prposed a sub-bank Dual Port memory architecture based on Single Port SRAM which supports several main data access policies.
+  b.Confused with its clock generation block and memory control unit.
+2.Read Tingshua's Paper on ISSCC 2019, got its main idea about dataflow and methods to  efficiently do RFFT(The inputs are real numbers):
+  a.Use CirCNN model proposed on Micro 2017.
+  b.Using radix-2 DIT(decimation in time) algorithm and use 7-stage butterfly architecture and each stage contains 32 basic butterfly units to support up to 128-point FFT.
+  c.Using "doubling algorithm" to avoid redundant operations in CFFT computing.
+  But there are some details that I don't understand clearly:
+  a.Why the weight matrixes are block-circulant matrixes after rearranging?
+  b.Details about how to realize 1-to-12b data-width supporting.
+  c.Details about HBST-TRAM.
+  I will do a representation when I completely understand this paper.
+3.Read Paper "A Pipelined FFT Architecture for Real-Valued Signals" to learn some architectures for real-valued signals.
+4.Modify the slides of "Winograd Convolution", the representation will da tonight.
+  
