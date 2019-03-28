@@ -4,7 +4,7 @@ Achivements
 ----------------------
 Began to learn VSLAM by reading the book - 视觉slam十四讲, and finished learning 5 chapters, set up enviroment for vslam and ran some example codes.
 
-Had a general idea of vslam and stdudied related knowledge of mathmatics.
+Had a general understanding of vslam and stdudied related knowledge of mathmatics.
 
 Plan for next week
 ---------------------
