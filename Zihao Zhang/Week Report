@@ -23,4 +23,11 @@
   I will do a representation when I completely understand this paper.
 3.Read Paper "A Pipelined FFT Architecture for Real-Valued Signals" to learn some architectures for real-valued signals.
 4.Modify the slides of "Winograd Convolution", the representation will da tonight.
+2019/04/04
+1.Attend a lecture about accelerating ddep convolutional network inferences at algorithm level given by Bei Yu from CUHK on Friday afternoon.
+2.Scan KAIST's ISSCC Paper about LNPU, an atchitecture aiming to accelerate DNN's training at edge. Need to study knowledge about training for further understanding.
+  a.Use mixed precision(FP8 and FP16) to improve enegy efficiency with slight accuracy loss.
+  b.Support zero-skipping operation in computing core.
+3.Learn speech given by Bert Moons on ISSCC 2019, the topic is "Enabling Embedded Intelligence: Application, architecture and design solutions".
+4.Ask for leave from Tuesday to Thursday.
   
