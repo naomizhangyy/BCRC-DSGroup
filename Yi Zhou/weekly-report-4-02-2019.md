@@ -1,5 +1,7 @@
-# 1 Learn how to building SoC based-on cortex-m0, write a simply AMBA-Lite bus protocol added two peripherals
+# Weekly report
 
-# 2 Learn the working principle of DMA and realized it on zedboard
+## 1 Learn how to building SoC based-on cortex-m0, write a simply AMBA-Lite bus protocol added two peripherals
 
-# 3 Learn some basic knowledge about matrix computation and ues of the package of numpy and pandas
+## 2 Learn the working principle of DMA and realized it on zedboard
+
+## 3 Learn some basic knowledge about matrix computation and ues of the package of numpy and pandas
