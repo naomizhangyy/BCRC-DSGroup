@@ -2,7 +2,7 @@
 
 ## Continue working on ARM SoC.
 
- 
+ ```
      ---------
      |  ARM  |
      |  CM3  |
@@ -21,3 +21,4 @@ ___________________________|_____AHB2        |---Timer2
     Off-chip RAMs
 
 
+```
