@@ -13,3 +13,7 @@ Continue writing master academic thesis,completing the main parts of it.
 4.spent about two days to desing the icb protocol to axi protocol convertor。Now I have finish the fifo using in it and drawing 
   the schematic of the convertor.
   
+2019/04/11
+1.spent about four days to finish the whole icb2axi protocol convertor including writing codes and drawing some schematic but without sufficient verification.
+2.spent about three days to look up some paper's abstract for knowing what are others doing.
+  ![screenshot](./cap1.png)
