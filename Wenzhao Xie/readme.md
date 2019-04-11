@@ -1,5 +1,7 @@
 Weekliy Report 4.5-4.11
-1. I have been working on Linux device driver writing. An AXI device is created and used in the hardware design, a device driver is needed for this AXI device. I wrote a driver and packaged it as a .ko file in order to install the driver into the Linux kernel.However some "Invalid format module" error shows. I think it's because the kernel edition that the .ko file uses is different from the Linux kernel edition.  
+
+  I have been working on Linux device driver writing. An AXI device is created and used in the hardware design, a device driver is needed for this AXI device. I wrote a driver and packaged it as a .ko file in order to install the driver into the Linux kernel.However some "Invalid format module" error shows. I think it's because the kernel edition that the .ko file uses is different from the Linux kernel edition. Haven't find the solution yet.
+  
 ------------------------------------------
 Weekly Report 3.29-4.4
 
