@@ -31,14 +31,20 @@ module BUADGENE(
     reg  [21:0] count_tx;
     reg  [21:0] count_rx;
     
+    reg         tx_reg;
+    reg         rx_reg;
+    
     // tx_buad = clk(20M) / 9600 = 20833
     always @(posedge clk or negedge reset) begin
         if (!reset) begin
             count_tx <= 0;
+            tx_reg <= 0;
         end
         else begin
-            if (count_tx == 10417)
+            if (count_tx == 10417) begin
                 count_tx <= 0;
+                tx_reg <= ~tx_reg; 
+            end
             else 
                 count_tx <= count_tx+1;
         end
@@ -48,16 +54,19 @@ module BUADGENE(
     always @(posedge clk or negedge reset) begin
         if (!reset) begin
             count_rx <= 0;
+            rx_reg <= 0;
         end
         else begin
-            if (count_rx == 651)
+            if (count_rx == 651) begin
                 count_rx <= 0;
+                rx_reg <= ~rx_reg;
+            end
             else 
                 count_rx <= count_rx+1;
         end
     end
     
-    assign tx_buad = (count_tx == 10417) ? 1:0;
-    assign rx_buad = (count_rx == 651) ? 1:0;
+    assign tx_buad = tx_reg;
+    assign rx_buad = rx_reg;
     
 endmodule
