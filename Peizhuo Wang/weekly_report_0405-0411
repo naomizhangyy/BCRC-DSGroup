@@ -1,0 +1,5 @@
+Read paper:ISSCC 2017.14.3 A 28nm SoC with a 1.2GHz 568nJ/Prediction Sparse Deep-Neural Network Engine with >0.1 Timing Error 
+Rate Tolerance for IoT Applications 
+1)Parallelism: Balanced memory bandwidth and throughput
+2)Sparsity: HW support for sparse data and small datatypes
+3)Resilience: Razor adaption to minimize PVT margins
