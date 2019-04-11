@@ -1,3 +1,6 @@
+Weekliy Report 4.5-4.11
+1. I have been working on Linux device driver writing. An AXI device is created and used in the hardware design, a device driver is needed for this AXI device. I wrote a driver and packaged it as a .ko file in order to install the driver into the Linux kernel.However some "Invalid format module" error shows. I think it's because the kernel edition that the .ko file uses is different from the Linux kernel edition.  
+------------------------------------------
 Weekly Report 3.29-4.4
 
 1.Did some research about writing device driver in embedded Linux. Inserting custom IP into hardware design and running it on Linux in FPGA requires a device driver for it and it looks pretty difficult. Now I'm trying to make a simple AXI-lite device driver. I'm not sure whether I can make it.
