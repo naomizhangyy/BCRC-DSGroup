@@ -119,5 +119,6 @@ module UART_RX
     
     assign ready = (state==finish) ? 1:0;
     assign data_out = data_reg;
+    assign error = error_reg;
     
 endmodule
