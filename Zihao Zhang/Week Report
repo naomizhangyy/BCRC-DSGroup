@@ -30,4 +30,12 @@
   b.Support zero-skipping operation in computing core.
 3.Learn speech given by Bert Moons on ISSCC 2019, the topic is "Enabling Embedded Intelligence: Application, architecture and design solutions".
 4.Ask for leave from Tuesday to Thursday.
-  
+2019/04/11
+1.Study and understand some details of Tingshua's ISSCC2019 Paper which confused me during previous reading:
+  a.Understand the method which makes the weight matrix after reformulation still be a block-circulant matrix
+  b.The data-resue pattern during element-wise multiplication
+  c.Serial-to-parallel transformation during dataflow
+2.Find some new details that don't appear in slides and paper
+  a.Because some twiddle factors can't be represented precisely，so FFT may bring error.
+  b.The method of rounding between stages.
+3.Write a block to do 64-point fft using radix-2 DIT algorithm for further research and modification. Not complete.
