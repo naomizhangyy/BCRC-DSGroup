@@ -17,3 +17,7 @@ Continue writing master academic thesis,completing the main parts of it.
 1.spent about four days to finish the whole icb2axi protocol convertor including writing codes and drawing some schematic but without sufficient verification.
 2.spent about three days to look up some paper's abstract for knowing what are others doing.
   ![screenshot](../cap1.png)
+  
+2019/04/12～2019/04/18
+  2019.04.12:
+    Write the directional verification plan of the icb2axi protocol convertor including simple test point decomposition.
