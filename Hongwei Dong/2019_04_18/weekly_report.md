@@ -11,5 +11,5 @@ Weekly_Report_2019_04_18
 
 # ToDo
 
-+ Continue to read papers to learn some approaches about dla.
++ Continue to read papers to learn something about dla.
 + Read the code of tanji3.
