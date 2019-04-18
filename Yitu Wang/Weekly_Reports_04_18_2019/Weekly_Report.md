@@ -1,7 +1,7 @@
 # DONE
 
 ## Project - Game Tetris
-I finished a project of game tetris for ASIC course. It took several days.
+I finished a project of game tetris based on Genesys 2 for ASIC course. It took several days.
 The related codes and documents are in the folder.
 
 ## Paper Reading
