@@ -39,3 +39,14 @@
   a.Because some twiddle factors can't be represented precisely，so FFT may bring error.
   b.The method of rounding between stages.
 3.Write a block to do 64-point fft using radix-2 DIT algorithm for further research and modification. Not complete.
+2019/04/18
+1.Read paper "CircConv: A Structured Convolution with Low Complexity":
+  a.Use circulant tensor for weight(the same as CirCNN does I think but use another method to explain the structured tensor)
+  b.Propose a method to training circulant CNN from a pre-trained model
+2.Read paper "Optimizing Bit-Serial Matrix Multiplication for Reconfigurable Computing":
+  a.Intoduce a framework named "BISMO" to dp bit-serial matrix multiplication in order to support variable-precision computation proposed in their previous work
+  b.Modify original Dot Product Unit(DPU) with matirx compression techniques to decrease the height of the input data at the cost of width increation.
+  c.Modify the shifter in DPU by change the computation order so that the new shifter only need to support one type(shift left by one bit) of shift opertion
+  d.Proposed bit-parallel to bit-serial transformaiton to reshape the data stored in main memory for efficient access.
+  e.The software of "BISMO" framework still need to study.
+3.Study math about matrix computation to find some tecniques to accelerate matrix computation(use the book writen by Gene H.Golub and Charles F.Van Loan)
