@@ -1,3 +1,8 @@
+Weekly Report 4.12-4.18
+
+  This week I did some research on IIC BUS and now I'm trying to write a IIC EEPROM Verilog module for practice. This module has three parts: IIC control logic, EEPROM and a testbench which acts as CPU.
+  
+------------------------------------------
 Weekliy Report 4.5-4.11
 
   I have been working on Linux device driver writing. An AXI device is created and used in the hardware design, a device driver is needed for this AXI device. I wrote a driver and packaged it as a .ko file in order to install the driver into the Linux kernel.However some "Invalid format module" error shows. I think it's because the kernel edition that the .ko file uses is different from the Linux kernel edition. Haven't find the solution yet.
