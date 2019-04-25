@@ -2,6 +2,7 @@ Weekly Report 4.19-4.25
 
   This week I finished writing the verilog module EEPROM using IIC, and finished some basic test on behavior simulation(write data to certain space area and read it). Now I'm writing a more complete testbench to test it.
   The code files are uploaded already.
+  
 ------------------------------------------
 Weekly Report 4.12-4.18
 
