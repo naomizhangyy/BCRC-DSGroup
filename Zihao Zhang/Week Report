@@ -50,3 +50,8 @@
   d.Proposed bit-parallel to bit-serial transformaiton to reshape the data stored in main memory for efficient access.
   e.The software of "BISMO" framework still need to study.
 3.Study math about matrix computation to find some tecniques to accelerate matrix computation(use the book writen by Gene H.Golub and Charles F.Van Loan)
+2019/04/25
+1.Think how to eliminate redundant operations during transformation of input feature map tile in Winograd convolution.
+  a.Because there exists overlapping between neighboring input feature map tiles
+2.Think how to use an unified computing architecture to support both complex-number matrix multiplication and real-number matrix multiplication.
+3.Think if there exists an unified architecture supporting both radix-2 FFT and radix-4 FFT
