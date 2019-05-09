@@ -55,3 +55,13 @@
   a.Because there exists overlapping between neighboring input feature map tiles
 2.Think how to use an unified computing architecture to support both complex-number matrix multiplication and real-number matrix multiplication.
 3.Think if there exists an unified architecture supporting both radix-2 FFT and radix-4 FFT
+2019/05/09
+1.Read Paper about PERMDNN, which uses structured matrix-based approach like CirCNN to bring regularity to sparse  weight matrix.
+  a.Make the weight matrices of the DNN model consist of multiple permuted diagnal sub-matrices.
+  b.Permuted diagnal matrix require less storage than unstructured matrix becasue its its row index can be got by its column index.
+  c.More flexibility than CirCNN because PERMCNN dose not have any restrictions on the size of block permuted diagnal matrix.
+  d.Avoid computation between complex numbers
+2.Read Paper about how to pack sparse CNNs for efficient systolic array implementations
+  a.Use column combining to make sparse weight matrix become dense.
+  b.Don't know how to combine the correspondingrows of input feature map matrix.
+  c.Use bit-serial MAC.
