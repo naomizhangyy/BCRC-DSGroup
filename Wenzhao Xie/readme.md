@@ -1,3 +1,11 @@
+
+Weekly Report 4.26-5.9
+
+  Finished the whole IIC EEPROM project, including RTL coding and testing, the verilog files have beed updated.
+  Now doing some reaerch on using OV7670. Finished the SCCB control module writing, now working on configuring registers of OV7670.
+  Read several papers about Global Asynchronous and Local Synchronous, it's part of a school course project.
+  
+------------------------------------------
 Weekly Report 4.19-4.25
 
   This week I finished writing the verilog module EEPROM using IIC, and finished some basic test on behavior simulation(write data to certain space area and read it). Now I'm writing a more complete testbench to test it.
