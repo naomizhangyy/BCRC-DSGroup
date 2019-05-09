@@ -21,3 +21,35 @@ Continue writing master academic thesis,completing the main parts of it.
 2019/04/12～2019/04/18
   2019.04.12:
     Write the directional verification plan of the icb2axi protocol convertor including simple test point decomposition.
+    
+2019/04/19～2019/04/25:
+    1.Finish the soc side icb2axi protocol convertor verification.
+    2.Finish icb2dla bus design and verification
+    3.Clip dla codes. Finish the soc side. And still doing in ddr side. It's a little bit complex.
+    4.Learn computer organization and design
+    
+    next week plan：
+    1.Make the plan in detail of what I really need to do？（soc with coprocessor or soc with bus connecting IP. discuss with Haozhe Zhu).
+      The plan should include the functional requirements and performance indicators of soc, the rationale and performance evaluation of 
+      each ip, the design of the overall architecture, advantages, disadvantages and possible risks. Assess the feasibility of the plan 
+      and whether the risks can be solved. First, do a good job of top-level design, then start the actual work.
+    2.Research on collaboration with planning, performance analysis of IP.
+    3.Learn computer organization and design。
+    
+ 2019/04/26~2019/05/09:
+    2019/04/26~2019/04/30
+      1.Finish learning the basic knowledge of computer organization and design.
+      2.Investigate and survey about the advantages and disadvantages of soc with coprocessor or soc with bus connecting IP.
+        Then I make sure the solution of coprocessor is better than the solution of bus IP, and the advantages mainly include
+        reduction memory access frequency therefor performance better and power consumption lower. But some challenges come 
+        including cache coherence and complier with coprocessor instructions.
+    2019/05/04~2019/05/09
+      1.Find some materials of rocc, a coprocessor interface of RocketChip processor.
+      2.Read some papers of rocc and some papers of DLA.
+      3.Start learning of Chisel because rocc uses Chisel to design.
+    
+    Plan next week:
+      1.Finish the study of Chisel.
+      2.Try to make sure how to use rocc.
+      3.Plan what I want to do, assess risk, difficulty, and workload, list the time nodes for execution, and then discuss it with professor.
+
