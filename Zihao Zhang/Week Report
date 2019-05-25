@@ -68,3 +68,5 @@
 2019/05/16
 1.Read paper "An N-Way Group Association Architecture and Sparse Data Group Association Load Balancing Algorithm for Sparse CNN Accelerators" by the team of STICKER.
 2.Think about if it is effective to store weights as Booth code and use Booth multiplication during computation of CNNs.
+2019/05/25
+Refer to Month Report-May.docx
