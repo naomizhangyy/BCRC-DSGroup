@@ -1,4 +1,10 @@
 
+Weekly Report 5.10-5.25
+  
+  I designed a video realtime display system using OV5640 with SCCB interface, the main codes are already finished, now configuring the camera configuration registers(the display effect is not good, the picture size, fps and color remain to be optimized). 
+  The codes and schemetic are uploaded. 
+  
+------------------------------------------
 Weekly Report 4.26-5.9
 
   Finished the whole IIC EEPROM project, including RTL coding and testing, the verilog files have beed updated.
