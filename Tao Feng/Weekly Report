@@ -52,7 +52,7 @@ Continue writing master academic thesis,completing the main parts of it.
       1.Do sum research of rocc useage
       2.Try to assert the work load of a coprocessor
     
-    2019/05/10~2019/05/
+    2019/05/10~2019/05/17
       1.I want to design a coprocessor which can accelerate deep neural network also fit general matrix calculation. I nearly
         finish the design of the data flow of it in deep neural network(reduce mem access, utilize data reuse, etc.)(using visio). 
         And how to make it high efficiency and low power.
@@ -62,5 +62,11 @@ Continue writing master academic thesis,completing the main parts of it.
       1.Make the Spec of the coprocessor.
       2.Design the archietecture of the coprocessor.
       
+    2019/05/18~2019/05/23
+      1.Finish the draft of the archietecture of the coprocessor design.
+      2.Read some matierals of yolo.
+      
+      plan next week:
+      1.Design the circuits of each part of the coprocessor
       
 
