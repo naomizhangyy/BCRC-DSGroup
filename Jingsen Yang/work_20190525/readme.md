@@ -10,7 +10,7 @@
    device.
 3. **Functionality-preserving, Security and Reliability, LowOverhead.**
 
-![1](F:\week report\Jingsen Yang\work_20190525\1.PNG)
+![1](https://github.com/naomizhangyy/BCRC-DSGroup/blob/master/Jingsen%20Yang/work_20190525/1.PNG)
 
 
 
