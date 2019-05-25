@@ -62,5 +62,7 @@ class LsqQuanWeight(t.autograd.Function):
 2. Try some new ideas.
   - keep the partial sum away from fixed-pointed rounding center
 
-3. Studying the clock domain crossing technology in the ASIC flow. 
+# Others
+
+1. Studying the clock domain crossing technology in the ASIC flow. 
 
