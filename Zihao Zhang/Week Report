@@ -70,3 +70,7 @@
 2.Think about if it is effective to store weights as Booth code and use Booth multiplication during computation of CNNs.
 2019/05/25
 Refer to Month Report-May.docx
+2019/05/30
+1.Read Paper "Architecture of a programmable systolic array"
+  a.Streaming instructions like data
+2.Think how to transfer pooling operation  to Winograd domain
