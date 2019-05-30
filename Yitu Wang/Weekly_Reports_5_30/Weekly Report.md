@@ -11,7 +11,7 @@ Did experiments on Matlab to verify the algorithm.
 Found a specific nn code using block-circulant and planned to learn it. 
 
 ## Course PJ
-Computer Architecture Project: Wrote code for LRU algorithm for cache.replacement
+Computer Architecture Project: Wrote code for LRU algorithm for cache replacement
 
 
 # TO DO
