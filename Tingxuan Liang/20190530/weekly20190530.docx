@@ -1,0 +1,329 @@
+———————————————————————————————————————
+Time: from 26/05/2019 to 30/05/2019
+———————————————————————————————————————
+	Read Paper
+Landmark based localization in urban environment
+创新点：
+	考虑了基于geo-reference的路标点，提出新的特征点跟踪和匹配方式
+	在位姿估计时，将参考位置考虑进去
+	考虑了传感器在汽车上的摆放方式（4个相机在车上，2前2后）
+	采用两种geo-reference：第一种是road marks，第二种是road signs。最后分析相机的个数分别是2,3,4时，使用其中一种或者两种geo-reference时的误差。
+
+
+	Read OPENVSLAM code
+	兼容多种相机类型，并可以轻松定制兼容其他类型相机；
+	可以存储和加载创建的地图，然后OpenVSLAM可以基于预先构建的地图定位新图像；
+	系统完全模块化的；
+
+	学习概率机器人相关知识以便更深入的理解SLAM文献。
+
+
+Next week work plan
+Continue to build related project environment for SLAM and read OPENVSLAM
+Continue to do research on SLAM algorithm
+
+———————————————————————————————————————
+Time: from 17/05/2019 to 25/05/2019
+———————————————————————————————————————
+	Read Paper
+Landmark based localization in urban environment
+ 
+	Pose prediction and uncertainty propagation
+在已知的t时刻的Pose为Pt, 则在t+1时刻的Pose为：
+P_(t+1)^*=P_t+v_t.∆t
+根据covariance propagation principle, Vt的协方差矩阵为：
+∑_vt▒〖AΣ_p A^T 〗
+则t+1时刻Pose可写为：
+Σ_(p_(t+1))^*=Σ_pt+Δt^2 Σ_vt
+	Guided matching
+ 
+由P_(t+1)^*和tie points得到searching area，再由 Normalized cross correlation score 方法找到在t+1图像上的x的精准位置。
+	Searching new tie points
+为了得到2D correspondences， 当我们在新的frame上找到新的特征点时，我们需要再上一个frame里匹配出来。为了在上一个frame It 中找到匹配点，我们用之前的方法It与It+1之间的correspondences， 然后再由bi-cubic interpolation方法在It中找到替代原来的特征点.
+
+Semantic Localization Via the Matrix Permanent
+文章创新点：
+1） 尝试去建立路标点和观测之间的所有可能的概率关联，而不是一对一的数据关联。这样的好处是避免一对一关联中错误关联的影响。因为在语义SLAM中，语义信息的数量相比于特征点而言是稀少的，因此不当的数据关联的个数应当尽可能的少，否则可能导致姿态估计很快出现漂移。
+2）考虑了目标识别中的错误率和漏检率。
+3) 优化了后验概率的计算方法。建立整个概率分布是一个N!N!复杂度的问题，作者将其转化为一个多项式复杂度的问题
+
+	Build related project environment for SLAM & debug.
+	选择数据集TUM数据集
+	调研两两帧的连续的视觉里程计的实现
+第一步：对新来的当前帧，提取关键点和描述子
+第二步：如果系统未初始化，则该帧为参考帧，根据深度图计算关键点的3D位置，返回上一步
+第三步：估计参考帧和当前帧的运动
+第四步：判断上述估计是否成功
+第五步：若成功，把当前帧当作新的参考帧，返回第一步
+第六步：若失败，记录连续丢失帧。当连续丢失超过一定帧数时，VO失败，算法结束，若未失败返回第一步
+	实现Camera类存储相机的内参和外参，并完成相机坐标系、像素坐标系和世界坐标系之间的变换。
+
+
+Next week work plan
+Continue to build related project environment for SLAM
+Continue to do research on SLAM algorithm
+
+———————————————————————————————————————
+Time: from 10/05/2019 to 16/05/2019
+———————————————————————————————————————
+	Read Paper
+Probabilistic Data Association for Semantic SLAM
+传统的SLAM算法都依赖于低级别的几何特征，比如点、线和平面。这些特征无法对环境中观测到的标志物进行语义标识。而且，基于这些低级特征使得回环检测通常依赖于摄像机的视角，而且在模糊或重复性的纹理环境中容易检测失败。另一方面，通过目标识别可以推测出标志物种类的大小，从而产生一小组易于识别的标志物，非常适用于与视角无关的闭环检测。然而，当地图中存在多个同类物体时，则需要对关键的数据进行关联。但数据关联和识别通常是用离散方法解决的离散问题，而传统SLAM是一个对尺度信息的连续优化问题。在本文中，我们将传感器状态和语义标志物的位置信息建模成一个优化问题，融合了尺度信息，语义信息和数据关联。然后把它分解为两个相互关联的问题：一个是离散数据关联和标志物种类概率估计，另一个是对尺度状态的连续优化。估计出的标志物和机器人姿态影响着数据的关联和标志物种类的分布，而这反过来又影响机器人-标志物姿态的优化。最后，通过室内和室外数据集验证了本文算法的性能。
+
+
+	Use SIFT to finish front-end of SLAM
+PNP & FlannBasedMatcher
+R is 
+[■(0.87703&-0.36519&0.31217@-0.47609&-0.57344&0.66670@-0.06446&-0.73334&-0.67679)]
+t is
+[■(-0.51279@-1.02764@1.60342)]
+
+Next week work plan
+Build related project environment for SLAM
+Continue to do research on SLAM algorithm
+
+———————————————————————————————————————
+Time: from 26/04/2019 to 09/05/2019
+———————————————————————————————————————
+	Use SIFT to finish front-end of SLAM
+所有匹配对
+ 
+
+优化后的匹配对
+ 
+
+一共找到62组匹配点
+2d-2d
+Fundamental matrix is 
+[■(0.00262&0.01943&-10.95624@-0.02324&-0.00366&26.35244@9.28720&-23.62500&1)]
+Essential matrix is
+[■(-0.00037&-0.18487&-0.05635@0.11797&-0.02496&0.69488@0.03079&-0.68119&-0.01606)]
+Homograph matrix is
+[■(0.94435&-0.17971&47.64819@0.03021&0.99887&6.03966@-0.00004&0.00012&1)]
+R is 
+[■(0.99464&-0.03199&0.09831@0.02907&0.99097&0.03039@-0.99217&-0.02793&0.99467)]
+t is
+[■(-0.96192@-0.07191@0.26370)]
+
+	Use SURF to finish front-end of SLAM
+所有匹配对
+ 
+
+
+
+
+优化后的匹配对
+ 
+一共找到62组匹配点
+2d-2d
+Fundamental matrix is 
+[■(1.71114&5.88490&-0.00197@-4.66375&2.32295&-0.11672@0.00495&0.11024&1)]
+Essential matrix is
+[■(0.00809&0.20459&0.03286@-0.15777&0.02660&-0.68822@0.00566&0.67633&0.01669)]
+Homograph matrix is
+[■(0.96103&-0.05038&0.06833@0.04860&0.99844&0.02745@-0.00003&0.00014&1)]
+R is
+[■(0.99638&-0.05038&0.06833@0.04860&0.99844&0.027458@-0.06961&-0.02403&0.99728)]
+t is
+[■(-0.95602@-0.03860@0.29072)]
+
+	Do research on SLAM algorithm
+SIFT算法分解为如下四步：
+1. 尺度空间极值检测：搜索所有尺度上的图像位置。通过高斯微分函数来识别潜在的对于尺度和旋转不变的兴趣点。
+2. 关键点定位：在每个候选的位置上，通过一个拟合精细的模型来确定位置和尺度。关键点的选择依据于它们的稳定程度。
+3. 方向确定：基于图像局部的梯度方向，分配给每个关键点位置一个或多个方向。所有后面的对图像数据的操作都相对于关键点的方向、尺度和位置进行变换，从而提供对于这些变换的不变性。
+4. 关键点描述：在每个关键点周围的邻域内，在选定的尺度上测量图像局部的梯度。这些梯度被变换成一种表示，这种表示允许比较大的局部形状的变形和光照变化。
+
+SURF算法分解为如下四步：
+1. 构建Hessian（黑塞矩阵），生成所有的兴趣点，用于特征的提取
+2. 构建尺度空间：不同组间图像的尺寸都是一致的，但不同组间使用的盒式滤波器的模板尺寸逐渐增大，同一组间不同层间使用相同尺寸的滤波器，但是滤波器的模糊系数逐渐增大。 
+3. 特征点定位：将经过Hessian矩阵处理的每个像素点与二维图像空间和尺度空间邻域内的26个点进行比较，初步定位出关键点，再经过滤除能量比较弱的关键点以及错误定位的关键点，筛选出最终的稳定的特征点。 
+4. 特征点主方向分配：采用的是统计特征点圆形邻域内的harr小波特征。 在特征点的圆形邻域内，统计60度扇形内所有点的水平、垂直harr小波特征总和，然后扇形以一定间隔进行旋转并再次统计该区域内harr小波特征值之后，最后将值最大的那个扇形的方向作为该特征点的主方向。 
+5. 关键点描述：Surf加入了Hessian矩阵迹的判断，如果两个特征点的矩阵迹正负号相同，代表这两个特征具有相同方向上的对比度变化，如果不同，说明这两个特征点的对比度变化方向是相反的，即使欧氏距离为0，也直接予以排除。
+
+	Prepare for mid-exam
+
+Next week work plan
+Build related project environment for SLAM
+Continue to do research on SLAM algorithm
+
+———————————————————————————————————————
+Time: from 19/04/2019 to 25/04/2019
+———————————————————————————————————————
+
+	Continue to finish front-end of SLAM
+2d-2d
+一共找到了79 组匹配点
+Fundamental matrix is
+[■(5.43545&0.00013&-0.02104@-0.00013&2.33947&-0.00633@0.02107&-0.00366&1)]
+Essential matrix is
+[■(0.01724&0.32805&0.04737@-0.32432&0.03292&-0.62625@-0.00588&0.62538&-0.01438)]
+Homograph matrix is
+[■(0.91317&-0.05339&0.00634@0.02223&0.98260&6.50891@-0.00001&-0.02455&1)]
+R is
+[■(0.99855&-0.05339&0.00634@0.05321&0.99827&0.02492@-0.01281&-0.02455&0.99966)]
+t is
+[■(-0.88299@-0.05539@0.46610)]
+
+	Debug code &G2O learning
+	Prepare for mid-exam
+	Next week work plan
+Continue to do slam simulation
+Continue to do research on semantic segmentation SLAM
+
+
+
+________________________________________________________________________________
+Time: from 12/04/2019 to 18/04/2019
+	Try to finish front-end 
+ 
+
+ 
+
+ 
+PnP:
+一共找到79组匹配点，转移矩阵和平移向量分别为：
+R=[■(0.99779&-0.05195&0.04125@0.05073&0.99826&0.02995@-0.04273&-0.02779&0.99869)]
+t=[■(-0.64553@-0.05776@0.28446)]
+BA优化后：
+R=[■(0.99777&-0.05194&0.04177@0.05073&0.99827&0.02958@-0.04224&-0.02739&0.99869)]
+t=[■(-0.64977@-0.05452@0.29556)]
+
+	Paper reading
+Landmark based localization in urban environment
+Publication：ISPRS Journal of Photogrammetry and Remote Sensing(2018)
+本文提出了一种基于摄像机和参考路标的不确定度分析的路标定位方法。该系统适用于六自由度姿态估计的不同摄像机配置。本文采用局部BA方法进行优化，并整合参考路标减小漂移，特别考虑了不确定度分析。一方面，本文采用估计姿态的不确定性来预测定位的精度。另一方面，在匹配、跟踪和路标配准时考虑了不确定性传播。该方法在KITTI数据集和移动测量系统获取的数据上进行了测试评估。实验表明，本文的算法可以达到分米级的精度。
+ 
+系统主要包括三部分:每一帧的初始位姿估计、关键帧的选取和路标整合优化。该系统从一个低成本的GPS提供的已知点出发，虽然初始点不是很精确，但是它的的不确定性在初始化仍然后仍然可以优化。事实上，这种不确定性可以传播到轨迹中，并在整合了地理参考地标后得到消除。
+
+	Other work
+Prepare for mid-exam
+
+	Next week work plan
+Continue to do slam simulation
+Continue to do research on semantic segmentation SLAM
+Prepare for mid-exam
+
+
+——————————————————————————————————
+Time: from 28/03/2019 to 04/04/2019
+1.Paper reading:
+Loop Closure Detection for Visual SLAM Systems Using Convolutional Neural Network
+Author: Xiwu Zhang
+Publication: Proceedings of the 23rd International Conference on Automation & Computing, University of  Huddersfield ,  Huddersfield, UK, 7-8 September 2017
+Main idea:
+We propose a loop closure detection method based on convolutional neural networks
+ 
+	Normalization: For each feature vector extracted from CNN model, we perform  normalization step as follows:
+(v_1,…v_d )←(v_1/√(∑_(j=1)^d▒v_j^2 ),…v_d/√(∑_(j=1)^d▒v_j^2 ))
+	PCA Dimensionality Reduction: Suppose we have obtained normalized feature vectors and the corresponding matrix 𝑋 consists of these vectors is:
+X=[■(V^I1@V^I2@■(…@V^In ))]
+a principal component analysis procedure is performed as the following algorithm:
+Let V ̅=1/n ∑_(i=1)^n▒V^((Ii)) 
+For i=1 to n do
+Replace V^((Ii)) in X with V^((Ii))-¯V
+End for
+cov=X^T X
+[U,S,W]=svd(cov)
+V_reduced^Ii=V^Ii U[:,:500]
+	Whitening: they whitened each feature vector according to the form:
+V_(whitened,j)^((Ii))=(V_(reduced,j)^((Ii)))/√(λ_j+ε)
+
+	Euclidean distance:
+D(i,j)=‖(V_w^Ii)/‖V_w^Ii ‖_2 -(V_w^Ij)/‖V_w^Ij ‖_2 ‖_2
+	Similarity score :
+S(i,j)=1-(D(i,j))/(max⁡{D(i,j)})
+If the similarity score is larger than a specific threshold, we regard it as a loop
+
+2. Do research on semantic segmentation SLAM
+3. Code reading:
+Github.com/gaoxiang12/slambook
+
+Next week work plan
+Continue to read Github.com/gaoxiang12/slambook
+Continue to do research on semantic segmentation SLAM
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Time: from 21/03/2019 to 27/03/2019
+Paper reading：
+Robust RGB-D SLAM in Dynamic Environment Using Faster R-CNN
+Author: Sifan Yang
+Publication：2017 3rd IEEE International Conference on Computer and Communication
+Main idea:
+This paper proposed a method which is used in dynamic environment. We first check whether there are objects moving by the threshold which represents consistency of matching and identify every potential candidate of the dynamic object. If the dynamic existence is confirmed, we compute the dynamic region and figure out the dynamic object efficiently. Then we will cull the wrong data association in dynamic region and add more new data association we don’t have in static region..
+ 
+1. Use Faster-RCNN to detect and identify the potential candidate of the dynamic object whose category will be labeled. 
+2. Distinguish the stationary from the dynamic environment and refine the data association by removing the mismatching related to the dynamics. 
+They compute the consistency of the point J in corresponding object regions.
+J=√(1/N ∑_(i=1)^N▒├ X_i^h-(R_(h,k) X_i^k+t_(h,k))┤‖^2 )
+It means that we project the feature points in the stationary region of the current frame k into the corresponding region of the keyframe h with the estimated camera pose T_(h,k). Then they compute the similarity between these. If the J is over the threshold, they label the region of object as dynamic status from stationary status and update the data association by filtering out the data associations in the moving region. Once the status is dynamic, there’s no chance for status to turn back. If the J is within the threshold, they label the region as stationary state and reserve previous data association.
+3. Estimate the camera pose with better data association and the optimization of the graph. 
+4. With accurate pose estimation, they reconstruct the dynamic environment successfully.
+
+关于语义分割的SLAM的调研感悟
+SLAM的另一个大方向就是和深度学习技术结合。到目前为止，SLAM的方案都处于特征点或者像素的层级。关于这些特征点或像素到底来自于什么东西，我们一无所知。这使得计算机视觉中的SLAM与我们人类的做法不怎么相似，至少我们自己从来看不到特征点，也不会去根据特征点判断自身的运动方向。 我们看到的是一个个物体，通过左右眼判断它们的远近，然后基于它们在图像当中的运动推测相机的移动。之前，研究者就试图将物体信息结合到SLAM中，曾把物体识别与视觉SLAM结合起来，构建带物体标签的地图。另外，把标签信息引入到BA或优化端的目标函数和约束中，我们可以结合特征点的位置与标签信息进行优化。语义信息可以帮助SLAM提高建图和定位的精度，特别是对于复杂的动态场景。传统SLAM的建图和定位多是基于像素级别的几何匹配。借助语义信息，我们可以将数据关联从传统的像素级别升级到物体级别，提升复杂场景下的精度。借助SLAM技术计算出物体之间的位置约束，可以对同一物体在不同角度。不同时刻的识别结果进行一致性约束，从而提高语义理解的精度。 综合来说，SLAM和语义的结合点主要是以下方面：
+     传统的物体识别、分割算法往往只考虑一幅图，而在SLAM中我们拥有一台移动的相机。如果我们把运动过程中的图片都带上物体标签，就能得到一个带有标签的地图。另外，物体信息亦可为回环检测、BA优化带来更多的条件。
+ 
+
+Code reading:
+Github.com/gaoxiang12/slambook
+
+Next week work plan
+Continue to read Github.com/gaoxiang12/slambook
+Read paper: CNN&SLAM
+
+ 
+Time: from 13/03/2019 to 20/03/2019
+Paper reading：
+CNN-SLAM: Real-time dense monocular SLAM with learned depth prediction
+Author：Keisuke Tatento 
+Publication: CVPR2017
+
+Main idea:
+This paper investigates how predicted depth maps from a deep neural network can be deployed for accurate and dense monocular reconstruction. 
+Framework
+The flow diagram in Fig. 1 sketches the pipeline of the framework. Authors employ a key-frame based SLAM paradigm. Within such approach, a subset of visually distinct frames is collected as key-frames, whose pose is subject to global refinement based on pose graph optimization. At the same time, camera pose estimation is carried out at each input frame, by estimating the transformation between the frame and its nearest key-frame. To maintain a high frame-rate, they propose to predict a depth map via CNN only on key-frames. In particular, if the currently estimated pose is far from that of existing keyframes, a new key-frame is created out of the current frame and its depth estimated via CNN.
+ 
+
+CNN model for SLAM
+The depth prediction architecture is based on ResNet50 and initialized with pre-trained weights on ImageNet. Pooling and FC are replaced by a sequence of residual up-sampling blocks composed of a combination of unpooling and convolutional layers. After up-pooling, drop-out is applied. The loss function is based on the reverse Huber function.
+They also retrained this network for predicting pixel-wise semantic labels for RGB images. In this way, they modified the network so that it has as many output channels as the number of categories and employed a soft-max layer and a cross-entropy loss function to be minimized via back-propagation and SGD.
+Key-frame Creation & Pose Graph Optimization
+There is a problem that sensors for SLAM have different intrinsic parameters from those used to capture the training set, the results will be inaccurate. In this way, they propose to adjust the depth regressed via CNN with the ratio between the focal length of current camera, f_cur and that of the sensor used for training, f_tr  as
+D_(k_i ) (u)=f_cur/f_tr  D_(k_i)^~ (u)
+Where D_(k_i)^~ is the depth map directly regressed by CNN
+This transformation is estimated by minimizing the photometric residual between the intensity image I_t of the current frame and the intensity image I_(k_i ) of the nearest key-frame k_i via weighted Gauss-Newton optimization based on the objective function
+E(T_t^(k_i ) )-∑_(u ̃∈Ω)▒〖ρ((r(u ̃,T_t^(k_i )))/(σ(r((u,) ̃T_t^(k_i )))))〗
+Where ρis Huber norm and σ is a function measuring the residual uncertainty. And r is the photometric residual defined as 
+r(u ̃,T_t^(k_i ) )=I_ki (u ̃ )-I_t (π(KT_t^ki (V_ki ) ̃(u ̃)))
+while V_ki (u) represents a 3D element of the vertex map computed from the key-frame’s depth map
+V_ki (u)=K^(-1) u ̇D_ki (u)
+Once T_t^ki is obtained, the current camera pose in the world coordinate system is computed as 
+T_t=T_t^ki T_ki
+
+作者首先筛选出关键帧，在关键帧上用训练好的CNN网络来预测单帧图深度值得到深度图，并以此深度图作为SLAM架构先验深度。同时在关键帧上用训练好的另一个CNN网络来做语义分割。
+随后像直接法SLAM的一样做BA，用高斯牛顿法，基于pose graph方法优化得到pose，和普通的半稠密 SLAM过程基本一样。
+将深度图和语义分割图融合进全局已有的场景深度图（实际上是三维地图点集合了）和三维语义分割图中
+
+
+Code reading:
+Github.com/gaoxiang12/slambook
+
+Next week work plan
+Continue to read Github.com/gaoxiang12/slambook
+Read paper: Fully Convolutional Networks for Semantic Segmentation
