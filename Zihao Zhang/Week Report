@@ -74,3 +74,13 @@ Refer to Month Report-May.docx
 1.Read Paper "Architecture of a programmable systolic array"
   a.Streaming instructions like data
 2.Think how to transfer pooling operation  to Winograd domain
+2019/06/13
+1.Read some papers about architectures of DNNs and types of convolution:
+  a.HetConv: use heterogeneous convolution to replace homogeneous convolution, heterogeneous kernel means the size of weight matrices are different through input channels.
+  b.DetNet: a backbone network for object detection based-on ResNet.
+  c:Dialated covolution: use dialated convolution to replace pooling operation in order to avoid loss of spatial resolution.
+2.Read paper "Partial-product Generation and Addition for Multiplication in FPGAs With 6-Input LUTs":
+  a.Propose a booth architecture according to the features of CLB in Xilinx FPGA.
+3.Read paper of DAC'2019:
+  a.bitblade: modified the computation sequence of Bitfusion and acquire area and power reduction.
+  b.Layer conscious memory management: solve the data transfer bottlenecks in FPGA-based DNN accelerator according to the shape of concrete layer.
