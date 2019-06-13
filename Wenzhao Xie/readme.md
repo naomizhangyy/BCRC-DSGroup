@@ -1,4 +1,5 @@
 Weekly Report 6.7-6.13
+
   Designed an asynchronous FIFO and a syncchronous FIFO, for verilog practicing and part of one of my final project. Read several papers, which are mainly about Globally Asynchronous Locally Synchronous System.
   Next week is about to prepare for my final examinations and projects.
   The verilog code I wrote has been uploaded.
