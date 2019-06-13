@@ -1,4 +1,9 @@
-
+Weekly Report 6.7-6.13
+  Designed an asynchronous FIFO and a syncchronous FIFO, for verilog practicing and part of one of my final project. Read several papers, which are mainly about Globally Asynchronous Locally Synchronous System.
+  Next week is about to prepare for my final examinations and projects.
+  The verilog code I wrote has been uploaded.
+  
+------------------------------------------
 Weekly Report 5.10-5.25
   
   I designed a video realtime display system using OV5640 with SCCB interface, the main codes are already finished, now configuring the camera configuration registers(the display effect is not good, the picture size, fps and color remain to be optimized). 
