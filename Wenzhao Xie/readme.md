@@ -1,3 +1,8 @@
+Weekly Report 6.14-6.19
+
+  Prepared for the final examinations and presentations.
+
+------------------------------------------
 Weekly Report 6.7-6.13
 
   Designed an asynchronous FIFO and a syncchronous FIFO, for verilog practicing and part of one of my final project. Read several papers, which are mainly about Globally Asynchronous Locally Synchronous System.
