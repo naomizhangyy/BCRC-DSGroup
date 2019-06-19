@@ -84,3 +84,6 @@ Refer to Month Report-May.docx
 3.Read paper of DAC'2019:
   a.bitblade: modified the computation sequence of Bitfusion and acquire area and power reduction.
   b.Layer conscious memory management: solve the data transfer bottlenecks in FPGA-based DNN accelerator according to the shape of concrete layer.
+2019/06/13
+1.Do the work of assistant.
+2.Think an idea about new DLA that sharing the partial production generation component of Booth multiplier during massive MAC operations.
