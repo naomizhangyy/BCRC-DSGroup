@@ -86,4 +86,8 @@ Continue writing master academic thesis,completing the main parts of it.
     2019/06/17~2019/06/19
       1.Read some articles of zynq7000 series and do some experiments to make sure the largest I/O bandwidth of it.
       2.Is reading some papers of DLA using FPGAs
+      
+    2019/06/20~2019/06/27
+      1.Do some BIST with my new FPGA board which has a stronger zynq FPGA chip
+      2.Read some materials of process-in-memory
 
