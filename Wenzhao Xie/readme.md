@@ -1,3 +1,8 @@
+Weekly Report 6.20-6.27
+
+  Continued preparing for the final examination and the final projects. Nearly finished.
+
+------------------------------------------
 Weekly Report 6.14-6.19
 
   Prepared for the final examinations and presentations.
