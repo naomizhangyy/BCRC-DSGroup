@@ -90,3 +90,13 @@ Refer to Month Report-May.docx
 2019/06/27
 1.Prepare for the medium term report.
 2.Do the work of assistant.
+2019/07/04
+Previous work this year:
+1.Help analog group modify and verify a module.
+2.Read papers about network architecture and DNN accelerator.
+3.Learn FFT and study its combination with convolution computing.
+4.Try to find some sparse matrices which are different from CirCNN and PermDNN.
+Next Plan:
+1.Study network training for future work.
+2.Design a deep learning accelerator which supports 2-bit, 4-bit, 8-bit weight and 8-bit weight.
+3.Complete the paper.
