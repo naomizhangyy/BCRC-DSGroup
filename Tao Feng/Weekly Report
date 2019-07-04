@@ -90,4 +90,19 @@ Continue writing master academic thesis,completing the main parts of it.
     2019/06/20~2019/06/27
       1.Do some BIST with my new FPGA board which has a stronger zynq FPGA chip
       2.Read some materials of process-in-memory
+      
+    2019/06/28~2019/07/04
 
+      Previous work this semester:
+
+        1.Read papers about DLA architecture.
+        2.Read materials about RISC-V.
+        3.Figure out the arch and micro-arch of my DLA.
+        4.Do some things with zynq.
+        5.Learn some simple tips of linux driver.
+
+      Next Plan:
+      
+        1.According to the previous knowledge, make a work as much solid as possible, 
+           including system design, software and hardware division, the interface of each part, and the implementation of each part.
+           At present, there are still many engineering problems that need to be solved
