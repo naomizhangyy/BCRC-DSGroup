@@ -1,3 +1,9 @@
+Weekly Report 6.28-7.4
+
+  Finished all the final projects and reports, read sevaral papers about sparse accelerator.
+  Next week I will ask for one week holidays.
+
+------------------------------------------
 Weekly Report 6.20-6.27
 
   Continued preparing for the final examination and the final projects. Nearly finished.
