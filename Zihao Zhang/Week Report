@@ -100,3 +100,8 @@ Next Plan:
 1.Study network training for future work.
 2.Design a deep learning accelerator which supports 2-bit, 4-bit, 8-bit weight and 8-bit weight.
 3.Complete the paper.
+2019/07/11
+1.Learn some light network architectures such as MobileNets and ShuffleNets. 
+2.Think how to efficiently support some novel convolution architectures such as depthwise seperable convolution and so on.
+  a.Read papers such as Eyeriss_v2 and MAERI(ASPLOS'18) which support flexible dataflow.
+3.Think the soc design of the system for the final demo and discuss some details such as data transfer with TaoFeng.
