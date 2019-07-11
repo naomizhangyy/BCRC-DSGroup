@@ -106,3 +106,12 @@ Continue writing master academic thesis,completing the main parts of it.
         1.According to the previous knowledge, make a work as much solid as possible, 
            including system design, software and hardware division, the interface of each part, and the implementation of each part.
            At present, there are still many engineering problems that need to be solved
+           
+     2019/07/04~2019/07/11
+        1.Run linux in my zynq FPGA
+        2.A rough assessment of the resource utilization of the design
+        3.Designed and roughly evaluated SOC architecture of my design
+        4.Do some simulation of MIS
+        Plan next week：
+          1.Gradually refine the design documentation
+          2.Start writing code
