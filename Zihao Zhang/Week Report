@@ -105,3 +105,12 @@ Next Plan:
 2.Think how to efficiently support some novel convolution architectures such as depthwise seperable convolution and so on.
   a.Read papers such as Eyeriss_v2 and MAERI(ASPLOS'18) which support flexible dataflow.
 3.Think the soc design of the system for the final demo and discuss some details such as data transfer with TaoFeng.
+2019/08/08
+1.Talked with professor.
+2.Took part in Chisel Community Conference 2019 on Saturday and Sunday to learning something about Chisel, a kind of HCL.
+3.Learn someting about AXI4 Stream protocol and corresponding IP provided by Xilinx.
+4.Think some detalis in paper "Deep Convolution Neural Network Architecture With Reconfigurable Computation Patterns"
+To do list:
+1.Continue working with the new idea, think how to reduce the resource consumption for encoding and partial product producing.
+2.Continue learn something about network training.
+3.Read paper that received from professor. Learn something about BERT.
