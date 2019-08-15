@@ -114,3 +114,7 @@ To do list:
 1.Continue working with the new idea, think how to reduce the resource consumption for encoding and partial product producing.
 2.Continue learn something about network training.
 3.Read paper that received from professor. Learn something about BERT.
+2019/08/15
+1.Help Jingsen debug the demo.
+2.Study netwok traing based on MXNet.
+3.Have an idea about pre-computation.(some additions can be completed before do inference on the chip).
