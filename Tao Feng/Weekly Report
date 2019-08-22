@@ -130,5 +130,12 @@ Continue writing master academic thesis,completing the main parts of it.
         2.Learn some of the specifications and styles of the c code on the project. 
       To do list：
         1.Start to write c model for verifying the dataflow.
+        
+     2019/08/22
+        1.Write c codes of read in picture of bmp format.
+        2.Read the source codes of YOLO.
+        3.Learn how to train a nerual net work but without practises.
+      To do list:
+        1.Continue writing c model.
 .
 
