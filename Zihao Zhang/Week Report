@@ -118,3 +118,7 @@ To do list:
 1.Help Jingsen debug the demo.
 2.Study netwok traing based on MXNet.
 3.Have an idea about pre-computation.(some additions can be completed before do inference on the chip).
+2019/08/22
+1.Learn feature extraction in Speech recognition and Synthesis.
+2.Study details of Wavenet.
+3.Train a very simple network for multi-classification using mxnet.
