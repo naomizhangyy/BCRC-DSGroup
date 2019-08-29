@@ -137,5 +137,10 @@ Continue writing master academic thesis,completing the main parts of it.
         3.Learn how to train a nerual net work but without practises.
       To do list:
         1.Continue writing c model.
-.
+     2019/08/29
+        1.Learn somethings about training and back propagation algorithm
+        2.Write input bmp picture pre-processing c codes
+        3.Write c models
+      Todo list：
+        1.Try to realize back propagation algorithm with c codes
 
