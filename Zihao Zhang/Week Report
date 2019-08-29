@@ -122,3 +122,7 @@ To do list:
 1.Learn feature extraction in Speech recognition and Synthesis.
 2.Study details of Wavenet.
 3.Train a very simple network for multi-classification using mxnet.
+2019/08/29
+1.Read code about implementation of Wavenet.
+2.Read paper how to decrease the time complexity of computation in Wavenet according to pre-computation.
+3.Learn some basic knowledge about general audio related tasks.
