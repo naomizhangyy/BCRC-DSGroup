@@ -126,3 +126,6 @@ To do list:
 1.Read code about implementation of Wavenet.
 2.Read paper how to decrease the time complexity of computation in Wavenet according to pre-computation.
 3.Learn some basic knowledge about general audio related tasks.
+2019/08/29
+1.Continue study details of original wavenet and fast wavenet.
+2.Study how to use the DMA in Zynq Processing System.
