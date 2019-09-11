@@ -129,3 +129,5 @@ To do list:
 2019/08/29
 1.Continue study details of original wavenet and fast wavenet.
 2.Study how to use the DMA in Zynq Processing System.
+2019/09/11
+1.Finished code reading and made slides to illustrate the details about wavenet. 
