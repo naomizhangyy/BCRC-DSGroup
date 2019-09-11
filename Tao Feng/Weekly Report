@@ -149,4 +149,10 @@ Continue writing master academic thesis,completing the main parts of it.
         2.Read c codes of YOLOv2, focus on weights loading blocks.
       Todo list:
         1.Read out floating weights and make quantization to 8 bits.
+        
+     2019/09/11
+        1.Last week I didn't finish the work of weights loading block and quantization block，because I found the need to learn
+          something of c++，so I focus on the study of cpp not 3-day mastering cpp
+       Todo list：
+        1.keep study c++ and use c++ to do the work of last week.
 
