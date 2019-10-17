@@ -162,4 +162,12 @@ Continue writing master academic thesis,completing the main parts of it.
         Todo list:
         1.finish the debugging
         2.write the detail design 
+        
+     2019/10/17
+        1.build the testbench of my project.
+        2.debug my testbench
+        3.try to use a small module of my design to joint debug the whole enviroment.
+        Todo list:
+        1.try to make the whole working
+        2.finish the spec of my project in detail. 
 
