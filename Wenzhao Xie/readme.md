@@ -1,3 +1,8 @@
+Weekly Report 10.18-10.23
+  Report to Prof.Shi about my graduation project.
+  wrote a little code for my graduation project.
+  
+-----------------------------------------
 Weekly Report 7.4-10.17
 
   期间主要是去复旦微电子实习了，在公司组里调研了不少公司的加速器产品，有落地的有未落地的。感觉叫好又叫座的不多。这个工作持续时间大概是从7月中下旬到9月初。
