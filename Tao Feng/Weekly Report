@@ -178,4 +178,12 @@ Continue writing master academic thesis,completing the main parts of it.
         1.to finish sythesis works
         2.to compare the difference among them
         3.to make decision which one we should use in the project
+        
+     2019/10/30
+        1.synsithesed two kind of mcu with 100Mega Herts and 400Mega Herts seperately
+        2.had compared timing, area and power(although not too accurate!)
+        3.traced some critical paths, but more complicated than my thought!(spent too much time)
+        4.writing a report of this experiment.
+        Todo list:
+        
 
