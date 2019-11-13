@@ -1,11 +1,19 @@
+Weekly Report 11.6-11.12
+
+  Finished a pretty weird and boring report last Friday.
+  Made the opening report for my graduation project.
+  Working on my graduation project, basically optimized some module and write some testcases and document.
+  
+----------------------------------------
 Weekly Report 10.18-10.23
+  
   Report to Prof.Shi about my graduation project.
   wrote a little code for my graduation project.
   
 -----------------------------------------
 Weekly Report 7.4-10.17
 
-  期间主要是去复旦微电子实习了，在公司组里调研了不少公司的加速器产品，有落地的有未落地的。感觉叫好又叫座的不多。这个工作持续时间大概是从7月中下旬到9月初。
+  期间主要是去复旦微电子实习了，在公司组里调研了不少公司的加速器产品。这个工作持续时间大概是从7月中下旬到9月初。
   然后9月到现在差不多是在找工作和构思毕设，这两天写好schedule发给史老师过目，如果觉得OK就可以正式开题了。后面在公司也是做这个毕设的题目，会在组会上不时汇报一下进度，请大家提点意见。
   
   没做啥实事，还是浪费了一些时间。
