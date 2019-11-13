@@ -149,3 +149,8 @@ To do list:
 2019/11/06
 1.Modify the patent.
 2.Write 256-bit Carry Skip Adder according to a paper.
+2019/11/13
+1.Finished the Carry skip Addder writing and did some simply analysis and synthesis
+2.Raed the paper about adder of Berkely and related papers.
+To do list:
+1.Use custom disign methodology to construct an adder.
