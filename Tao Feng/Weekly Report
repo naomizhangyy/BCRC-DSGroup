@@ -200,6 +200,15 @@ Continue writing master academic thesis,completing the main parts of it.
         2.studying RTOS and accessing the information of hardware modules related to the project
         
         Todo list:
-        Migrating RTT to the mcu
+        
+     2019/11/20
+        1.Studying the work flows of RTOS and reading some kernel codes
+        2.Trying the building flows of ARM and successfully porting RTOS on it, but the flows of RISC-V with something wrong
+        
+        Todo list:
+        1.keep reading kernel codes
+        2.try to run the flows of RISC-V
+        
+      
         
 
