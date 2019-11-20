@@ -154,3 +154,7 @@ To do list:
 2.Raed the paper about adder of Berkely and related papers.
 To do list:
 1.Use custom disign methodology to construct an adder.
+2019/11/20
+1.Study Ling's addition algorithm.
+2.Study some tree architecture like kogge-stone and Ladner–Fischer, both dense and sparse.
+2.Review "Digital Integrated Circuits".
