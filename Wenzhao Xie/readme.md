@@ -9,7 +9,7 @@ Weekly Report 11.20-11.26
 ----------------------------------------
 Weekly Report 11.13-11.19
 
-  Continued writing documents and RTL codes for my graduation project.
+    Continued writing documents and RTL codes for my graduation project.
 ----------------------------------------
 Weekly Report 11.6-11.12
 
