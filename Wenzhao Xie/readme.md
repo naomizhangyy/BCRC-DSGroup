@@ -1,3 +1,10 @@
+Weekly Report 11.20-11.26
+
+  1.Finished part of the DLA loop test;
+  2.Continued writing document for DLA;
+  3.Reconsidered my DLA architecture and design details.
+  
+----------------------------------------
 Weekly Report 11.13-11.19
 
   Continued writing documents and RTL codes for my graduation project.
