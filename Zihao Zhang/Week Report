@@ -158,3 +158,6 @@ To do list:
 1.Study Ling's addition algorithm.
 2.Study some tree architecture like kogge-stone and Ladner–Fischer, both dense and sparse.
 2.Review "Digital Integrated Circuits".
+2019/11/27
+1.Design some basic gate circuits in virtusuo.
+2.Learning some classical custom adder on MOSFET level.
