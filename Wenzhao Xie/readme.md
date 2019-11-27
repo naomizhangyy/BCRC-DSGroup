@@ -1,7 +1,9 @@
 Weekly Report 11.20-11.26
 
   1.Finished part of the DLA loop test;
+  
   2.Continued writing document for DLA;
+  
   3.Reconsidered my DLA architecture and design details.
   
 ----------------------------------------
