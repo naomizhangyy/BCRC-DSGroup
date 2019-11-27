@@ -209,6 +209,15 @@ Continue writing master academic thesis,completing the main parts of it.
         1.keep reading kernel codes
         2.try to run the flows of RISC-V
         
+     2019/11/27
+        1.read the codes of driver layer in RTOS architecture
+        2.write the bottom driver of GPIOs but without combining with the top driver layer
+        3.realized some ISRs
+        
+        Todo list：
+        1.finish the codes of the GPIO driver
+        2.finish the codes of the uart driver
+        
       
         
 
