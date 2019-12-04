@@ -218,6 +218,13 @@ Continue writing master academic thesis,completing the main parts of it.
         1.finish the codes of the GPIO driver
         2.finish the codes of the uart driver
         
+     2019/12/04
+        1.finish the define codes of the correspond hardware
+        2.finish the coding of the uart driver in RTOS，now debugging
+        
+        Todo list：
+        run simple demo of RTOS
+        
       
         
 
