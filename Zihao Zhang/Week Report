@@ -165,3 +165,6 @@ To do list:
 1.Simulated domino AND gate, domino OR gate, domino carry generation module and modified their size in order to get better result.
 2.Construct sum precomputation logic and sum selection logic using standard cells in tsmc65lp.
 3.Construct all stages of Kogge-Stone radix-2 sparse-2 64-bit adder(7 stages in total).
+2019/12/11
+1.Notes: onenote:https://d.docs.live.net/15b55244ee6801c7/文档/逸正%20的笔记本/Sequencial%20Generative%20Model.one#section-id={0C716B27-F959-4C19-B2C3-276A54491558}&end
+2.Complete the whple adder and do some simulation. The adder can work at 1GHz at the worse case.
