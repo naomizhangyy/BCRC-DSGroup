@@ -221,10 +221,13 @@ Continue writing master academic thesis,completing the main parts of it.
      2019/12/04
         1.finish the define codes of the correspond hardware
         2.finish the coding of the uart driver in RTOS，now debugging
+       
+     2019/12/11
+        1.finish the codes of the GPIO driver
+        2.realized the APIs of being connected with UART driver and GPIO driver
         
-        Todo list：
-        run simple demo of RTOS
-        
+        Todo list:
+        to realize the interrupt lock.
       
         
 
