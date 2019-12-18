@@ -8,12 +8,12 @@ codify this analysis into an analytical cost model, MAESTRO (Modeling Accelerato
 
 
 ##Tensors in DNNs
-![](./pic/MAESTRO-1.png)
+![](https://github.com/naomizhangyy/BCRC-DSGroup/blob/master/Jingsen%20Yang/work_20191218/pic/MAESTRO-1.png)
 
 
 
 ##Data-Centric Representation
-![](./pic/MAESTRO-2.png)
+![](https://github.com/naomizhangyy/BCRC-DSGroup/blob/master/Jingsen%20Yang/work_20191218/pic/MAESTRO-2.png)
 
 ###Spatial Map(size, offset): 
 α specifies a distribution of dimension α (e.g., R, X) of a data structure across PEs, where size refers to the number of indices mapped in the dimension α to each PE, and offset describes the shift in the starting indices of α across consecutive PEs.
@@ -27,19 +27,19 @@ The sequence of spatial and temporal maps in the dataflow specification dictate 
 
 
 ##Dataflow Playground
-![](./pic/MAESTRO-3.png)
+![](https://github.com/naomizhangyy/BCRC-DSGroup/blob/master/Jingsen%20Yang/work_20191218/pic/MAESTRO-3.png)
 
-![](./pic/MAESTRO-4.png)
+![](https://github.com/naomizhangyy/BCRC-DSGroup/blob/master/Jingsen%20Yang/work_20191218/pic/MAESTRO-4.png)
 
 
 
 ##QUANTITATIVE DATAFLOW ANALYSIS
 
-![](./pic/MAESTRO-5.png)
+![](https://github.com/naomizhangyy/BCRC-DSGroup/blob/master/Jingsen%20Yang/work_20191218/pic/MAESTRO-5.png)
 
-![](./pic/MAESTRO-6.png)
+![](https://github.com/naomizhangyy/BCRC-DSGroup/blob/master/Jingsen%20Yang/work_20191218/pic/MAESTRO-6.png)
 
-![](./pic/MAESTRO-7.png)
+![](https://github.com/naomizhangyy/BCRC-DSGroup/blob/master/Jingsen%20Yang/work_20191218/pic/MAESTRO-7.png)
 
 
 ##DISCUSSION AND FUTURE WORK
