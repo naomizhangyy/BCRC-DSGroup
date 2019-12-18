@@ -14,8 +14,8 @@ First, SparTen achieves efficient inner join by providing support for native two
 Second, to address load imbalance while achieving full reuse, SparTen employs an offline software scheme called greedy balancing.
 
 ###Efficient inner join
-![](./pic/SparTen-1.png)
-![](./pic/SparTen-2.png)
+![](https://github.com/naomizhangyy/BCRC-DSGroup/blob/master/Jingsen%20Yang/work_20191218/pic/SparTen-1.png)
+![](https://github.com/naomizhangyy/BCRC-DSGroup/blob/master/Jingsen%20Yang/work_20191218/pic/SparTen-2.png)
 
 SparTen uses a bit-mask representation where a sparse tensor is a two tuple of a bit mask, called SparseMap, and a set of non-zero values. 
 The SparseMap has 1’s for positions with non-zero values and 0’s otherwise (Figure 3). For ease of implementation, tensors are broken up into chunks of n positions to give n-bit SparseMaps and the corresponding (variable number of) non-zero data values.
@@ -30,7 +30,7 @@ SparTen supports native two-sided sparse execution which retrieves, consumes, pr
 
 
 ##SparTen microarchitecture
-![](./pic/SparTen-3.png)
+![](https://github.com/naomizhangyy/BCRC-DSGroup/blob/master/Jingsen%20Yang/work_20191218/pic/SparTen-3.png)
 
 SparTen employs asynchronous compute units (left in Figure 4). Each compute unit, comprising a multiplier, an accumulator, the inner join circuitry (Section 3.1), and buffers for inputs and output, performs a sparse vector-vector dot product.
 
@@ -40,5 +40,5 @@ At the start of a CNN layer, the CPU instructs each compute unit of a cluster to
 
 
 ##Greedy balancing
-![](./pic/SparTen-4.png)
+![](https://github.com/naomizhangyy/BCRC-DSGroup/blob/master/Jingsen%20Yang/work_20191218/pic/SparTen-4.png)
 
