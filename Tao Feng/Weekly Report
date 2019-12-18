@@ -228,6 +228,15 @@ Continue writing master academic thesis,completing the main parts of it.
         
         Todo list:
         to realize the interrupt lock.
+        
+     2019/12/18
+        1.finished by using the cross compile tool chain for compiling some RTOSs.
+        2.finished library, syntax and compilation warnings and errors debugging.
+        3.completed the compilations of two RTOSs and resources usage seen my report.
+        
+        Todo list:
+        to do function debugs in the board 
+        
       
         
 
