@@ -172,3 +172,7 @@ To do list:
 1.Solved the problems meeted in simulation and sumulated the adder at different frequency, the delay is worse than reults in the paper.
 2.Wrote another adder using different equations to verify its function, debugging.
 3.Scan some literatures about clock-delay domino.
+2019/12/25
+1.Complete the gate-level verilog of 64-bit Ling radix-2 sparse-2 adder with correct function.
+2.Synthesis the adder mentioned above and a direct "a + b" adder, the direct "a + b" adder performs a little better than the adder mentioned above.
+3.Read two papers.
