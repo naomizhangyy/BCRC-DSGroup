@@ -41,7 +41,7 @@ We next describe two different variants of zcompl and zcomps: (i) interleaved he
 
 Interleaved-header zcomps requires two input registers (reg1 and reg2) and a comparison condition flag (CCF). 
 
-![](./pic/ZCOMP-1.png)
+![](https://github.com/naomizhangyy/BCRC-DSGroup/blob/master/Jingsen Yang/work_20191225/pic/ZCOMP-1.png)
 
 
 It takes the input vector via the reg1 register operand (e.g. a 512-bit SIMD register),
@@ -57,7 +57,7 @@ The final output to be written into memory is formed by concatenating the header
 
 zcompl takes two input registers: reg1 and reg2,
 
-![](./pic/ZCOMP-2.png)
+![](https://github.com/naomizhangyy/BCRC-DSGroup/blob/master/Jingsen Yang/work_20191225/pic/ZCOMP-2.png)
 
 reg1, is the destination register (e.g. 512-bit SIMD register) to which the loaded vector will be expanded
 reg2, is the source pointer for the loaded vector.
