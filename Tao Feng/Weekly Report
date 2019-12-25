@@ -237,6 +237,13 @@ Continue writing master academic thesis,completing the main parts of it.
         Todo list:
         to do function debugs in the board 
         
+     2019/12/25
+        1.finished the debug of GPIO driver and make a flash led demo using three threads.
+        2.fixed the laptop of using in out public group meeting, replacing a hard disk and solve the problem of power manager which limits the frequency of its cpu.
+        3.doing the demo UART driver and fixing some bugs.
+        
+        Todo list:
+        finishes the debug of UART and makes a demo of it.
       
         
 
