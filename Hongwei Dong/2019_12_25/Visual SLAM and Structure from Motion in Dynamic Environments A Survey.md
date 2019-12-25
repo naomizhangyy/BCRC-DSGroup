@@ -1,6 +1,6 @@
 # Visual SLAM and Structure from Motion in Dynamic Environments: A Survey
 
-![Screenshot from 2019-12-20 18-33-12](asset/Visual SLAM and Structure from Motion in Dynamic Environments A Survey/Screenshot from 2019-12-20 18-33-12.png)
+![Screenshot from 2019-12-20 18-33-12](asset/0.png)
 
 ## Robust Visual SLAM
 
