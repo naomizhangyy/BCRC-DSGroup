@@ -176,3 +176,11 @@ To do list:
 1.Complete the gate-level verilog of 64-bit Ling radix-2 sparse-2 adder with correct function.
 2.Synthesis the adder mentioned above and a direct "a + b" adder, the direct "a + b" adder performs a little better than the adder mentioned above.
 3.Read two papers.
+2019/01/08
+1.Read related documents about Dsign Compiler and Designware libirary, the CLA IP will be used by DC when write "a + b" in source file. 
+2.Construct 64-bit Ling's adder using virtuoso.
+3.Read papers:
+  1.Reconfigurable Convolutional Kernels for Neural Networks on FPGAs(not understanding)
+  2.Synetgy
+  3.An Efficient Hardware Accelerator for Sparse Convolutional Neural Networks on FPGAs
+  4.Shift: A Zero FLOP, Zero Parameter Alternative to Spatial Convolutions
