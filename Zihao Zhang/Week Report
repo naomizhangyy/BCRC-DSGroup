@@ -184,3 +184,9 @@ To do list:
   2.Synetgy
   3.An Efficient Hardware Accelerator for Sparse Convolutional Neural Networks on FPGAs
   4.Shift: A Zero FLOP, Zero Parameter Alternative to Spatial Convolutions
+2019/01/15
+1.Complete 64-bit Ling adder except sum generation logic.
+2.Compare the latency with  previous 64-bit adder.
+3.Read paper:
+  a. Addernet
+  b. REQ-Yolo
