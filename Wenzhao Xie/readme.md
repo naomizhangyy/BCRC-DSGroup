@@ -1,3 +1,20 @@
+Weekly Report 1.9-1.15
+  
+  Generated random ifmap, weights data and corresponding golden ofmap using python. 
+  Dump the input data into bram and run loop C using random data, compared the DLA output and golden output.
+  Debug the stupid loop C and found some deeply hidden bugs, fixed it, now the DLA output is perfectly matched with the golden output.
+  Bug example:
+  reg signed [15:0] a;
+  reg signed [15:0] b;
+  wire signed [16:0] c;
+  
+  a <=  6666;
+  b <= -6662;
+  assign c = a + b;
+  
+  c will be a negative number.
+  
+----------------------------------------
 Weekly Report 11.20-11.26
 
   1.Finished part of the DLA loop test;
