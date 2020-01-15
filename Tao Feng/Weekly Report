@@ -243,14 +243,19 @@ Continue writing master academic thesis,completing the main parts of it.
         3.doing the demo UART driver and fixing some bugs.
         
         Todo list:
-        finishes the debug of UART and makes a demo of it.
+        to finish the debug of UART and make a demo of it
       
-      2019/01/08
-        1.builded eclipse enviroment for rtthread
-        2.make rtos small
+      2020/01/08
+        1.built eclipse enviroment for rtthread
+        2.making rtos small
         
         Todo list：
         1.some other potential bug？
         2.wifi
         
+      2020/01/15
+        1.surveyed the wifi schemes for rtos
+        2.fixed a link bug of rtos
+        
+        Todo list：
 
