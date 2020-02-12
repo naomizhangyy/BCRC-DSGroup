@@ -1,3 +1,34 @@
+Weekly Report 2020/2/12
+
+  Completed the mini Davinci DLA control logic package(native interface, not AXI).
+  
+  Finished 2 conv testcases:
+  
+  1.Test Cases 0				
+  
+      input: 114x114		output: 58x58			pad size: 1		  	ksize: 3  		stride: 1		pool size: 2			pool mode: average	
+      length_0: 32 			length_1: 24			length_2: 32			length_3: 24								
+      heigth_0: 32			height_1: 32			height_2: 24			height_3: 24			input layer number: 32		
+      length_num_0: 3	  length_num_1: 3		length_num_2: 3		length_num_3: 1		output layer number: 32	
+      
+      Actual time: 300836 cycles
+      Idea time:   112*112*9*32*32/512 = 225792 cycles
+      Efficincy:   75%
+      
+   2.Test Cases 1				
+  
+      input: 224x224		output: 113x113	  pad size: 1		  	ksize: 3  		stride: 1		pool size: 2			pool mode: max	
+      length_0: 32 			length_1: 14			length_2: 32			length_3: 14								
+      heigth_0: 32			height_1: 32			height_2: 14			height_3: 14			input layer number: 3		
+      length_num_0: 7	  length_num_1: 7		length_num_2: 7		length_num_3: 1		output layer number: 16
+      
+      Actual time: 232399 cycles
+      Idea time:   222*222*9*3*16/512 = 41583 cycles
+      Efficiency:  17.89%
+
+  Next week plan: complete other two testcase, the combine these cases together to a simple convolution network, test it.
+  
+-----------------------------------------
 Weekly Report 1.9-1.15
   
   Generated random ifmap, weights data and corresponding golden ofmap using python. 
