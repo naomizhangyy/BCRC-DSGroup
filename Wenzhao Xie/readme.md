@@ -28,6 +28,8 @@ Weekly Report 2020/2/12
 
   Next week plan: complete other two testcase, the combine these cases together to a simple convolution network, test it.
   
+  All the test files needed for simulation and the DLA code have been uploaded, it can be run without bug in vivado2018.2(only in simulation).
+  
 -----------------------------------------
 Weekly Report 1.9-1.15
   
