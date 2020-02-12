@@ -31,7 +31,7 @@ Weekly Report 2020/2/12
   All the test files needed for simulation and the DLA code have been uploaded, it can be run without bug in vivado2018.2(only in simulation).
   
 -----------------------------------------
-Weekly Report 1.9-1.15
+Weekly Report 1.9-1.15 
   
   Generated random ifmap, weights data and corresponding golden ofmap using python. 
   
