@@ -26,7 +26,7 @@ Weekly Report 2020/2/12
       Idea time:   222*222*9*3*16/512 = 41583 cycles
       Efficiency:  17.89%
 
-  Next week plan: complete other two testcase, the combine these cases together to a simple convolution network, test it.
+  Next week plan: complete other two testcases, then combine these cases together to a simple convolution network, test it.
   
   All the test files needed for simulation and the DLA code have been uploaded, it can be run without bug in vivado2018.2(only in simulation).
   
