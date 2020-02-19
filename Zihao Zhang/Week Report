@@ -195,3 +195,6 @@ To do list:
 2.Read paper ”Fast Multiplier Generator for FPGAs with LUT based Partial Product Generation and Column/row Compression”, note will be uploaded to Github.
 3.Read paper “Reconfigurable Constant Multiplication for FPGAs”, not very understanding, note will be uploaded next week.
 4.Begin to read documents about LUT’s architecture of Xilinx’s 7 series FPGA.
+2020/02/19
+1.Read paper"RoCoCo: Row and Column Compression for High-Performance Multiplication on FPGAs".
+2.Read a tutorial "Compute-Efficient Neural-Network Acceleration" on FPGA2019.
