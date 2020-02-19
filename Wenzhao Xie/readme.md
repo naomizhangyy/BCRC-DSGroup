@@ -2,8 +2,24 @@ Weekly Report 2020/2/19
   
   Finished the other 2 conv testcase:
   
-  
-  
+  Test Cases 2																										
+    input:  58x58			output:  56x56			pad size:  1			ksize:  5  		stride:  1		pool size:  1			pool mode: no pool	
+    length_0:  32 			length_1:  30			length_2:  32			length_3:  30								
+    heigth_0:  32			height_1:  32			height_2:  30			height_3:  30						input layer number: 16		
+    length_num_0: 1			length_num_1: 1			length_num_2: 1			length_num_3: 1						output layer number: 16		
+    测试结果：																	
+    实际卷积所花时间：47241 cycles						理想时间：56*56*25*16*16/512 = 36450 cycles									efficiency: 77.15%		
+
+  Test Cases 3																	
+    input:  30x30			output:  14x14			pad size:  0			ksize:  3  		stride:  1		pool size:  2			pool mode: max	
+    length_0:  30 			length_1:  0			length_2:  0			length_3:  0								
+    heigth_0:  30			height_1:  0			height_2:  0			height_3:  0						input layer number: 16		
+    length_num_0: 1			length_num_1: 0			length_num_2: 0			length_num_3: 0						output layer number: 16		
+    测试结果：																	
+    实际卷积所花时间：9116 cycles						理想时间：28*28*9*16*16/512 = 3528 cycles									efficiency:38.7%		
+    
+    Wrote some document.
+
 -------------------------------------------
 Weekly Report 2020/2/12
 
