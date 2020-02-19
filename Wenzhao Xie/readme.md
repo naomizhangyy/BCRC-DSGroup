@@ -5,9 +5,9 @@ Weekly Report 2020/2/19
   Test Cases 2		
   
     input:  58x58			output:  56x56		pad size:  1			ksize:  5  		stride:  1	pool size:  1		pool mode: no pool	
-    length_0:  32 		length_1:  30			length_2:  32			length_3:  30								
+    length_0:  32 		  length_1:  30			length_2:  32			length_3:  30								
     heigth_0:  32			height_1:  32			height_2:  30			height_3:  30			  	input layer number: 16		
-    length_num_0: 1		length_num_1: 1		length_num_2: 1		length_num_3: 1				output layer number: 16		
+    length_num_0: 1		  length_num_1: 1		length_num_2: 1		length_num_3: 1				output layer number: 16		
     测试结果：																	
     实际卷积所花时间：47241 cycles						理想时间：56*56*25*16*16/512 = 36450 cycles				efficiency: 77.15%		
 
