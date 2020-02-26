@@ -198,3 +198,5 @@ To do list:
 2020/02/19
 1.Read paper"RoCoCo: Row and Column Compression for High-Performance Multiplication on FPGAs".
 2.Read a tutorial "Compute-Efficient Neural-Network Acceleration" on FPGA2019.
+2020/02/26
+1.Read paper "Reuse Kernels or Activations? A Flexible Dataflow for Low-latency Spectral CNN Acceleration" on FPGA2020
