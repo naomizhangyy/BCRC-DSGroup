@@ -1,3 +1,29 @@
+Weekly Report 2020/2/26
+  
+  Start the YOLO-Lite simulation.
+  
+    YOLO-Lite:
+    
+    Convolution layer 0:   
+      input: 226x226  output: 224x224 stride: 1 ksize: 3  pool mode: max  ifmap channel: 8(3) ofmap channel: 16
+    pool layer 0:
+      input: 224x224  output: 112x112 stride: 1 ksize: 3  pool mode: max  ifmap channel: 16 ofmap channel: 16
+      
+    Convolution layer 1:
+      input: 114x114  output: 112x112 stride: 1 ksize: 3  pool mode: max  ifmap channel: 16 ofmap channel: 32
+    pool layer 1:
+      input: 112x112  output: 56x56 stride: 1 ksize: 3  pool mode: max  ifmap channel: 32 ofmap channel: 32
+      
+    Convolution layer 2:
+      input: 58x58  output: 56x56 stride: 1 ksize: 3  pool mode: max  ifmap channel: 32 ofmap channel: 64
+    pool layer 2:
+      input: 56x56  output: 28x28 stride: 1 ksize: 3  pool mode: max  ifmap channel: 64 ofmap channel: 64
+      
+    Convolution layer 3:
+      input: 30x30  output: 28x28 stride: 1 ksize: 3  pool mode: max  ifmap channel: 64 ofmap channel: 128
+    pool layer 3:
+      input: 28x28  output: 14x14 stride: 1 ksize: 3  pool mode: max  ifmap channel: 128 ofmap channel: 128
+-----------------------------------------
 Weekly Report 2020/2/19
   
   Finished the other 2 conv testcase:
