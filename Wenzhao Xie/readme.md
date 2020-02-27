@@ -31,7 +31,7 @@ Weekly Report 2020/2/26
       conv_2 + pool_2: 112896 / 250907 = 45%
       conv_3 + pool_3: 112896 / 236059 = 47.8%
       
-  The simulation result is not satisfactory, found a problem which will greatly reduce the convolution efficiency, now fixing it. Once the problem is solved, the efficiency will improve from 20% to 30%.
+  The simulation result is not satisfactory, found a problem which will greatly reduce the convolution efficiency, now fixing it. Once the problem is solved, the efficiency will improve about 20% or 30%.
   
 -----------------------------------------
 Weekly Report 2020/2/19
