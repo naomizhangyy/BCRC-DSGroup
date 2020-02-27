@@ -1,6 +1,6 @@
 Weekly Report 2020/2/26
   
-  Start the YOLO-Lite simulation.
+  Started the YOLO-Lite simulation.
   
     YOLO-Lite:
     
@@ -23,6 +23,16 @@ Weekly Report 2020/2/26
       input: 30x30  output: 28x28 stride: 1 ksize: 3  pool mode: max  ifmap channel: 64 ofmap channel: 128
     pool layer 3:
       input: 28x28  output: 14x14 stride: 1 ksize: 3  pool mode: max  ifmap channel: 128 ofmap channel: 128
+      
+    Test results:
+    
+      conv_0 + pool_0: 42336 / 256161 = 16.53%
+      conv_1 + pool_1: 112896 / 225827 = 50%
+      conv_2 + pool_2: 112896 / 250907 = 45%
+      conv_3 + pool_3: 112896 / 236059 = 47.8%
+      
+  The simulation result is not satisfactory, found a problem which will greatly reduce the convolution efficincy, now fixing it. Once the problem is solved, the efficincy will improve about from 20% to 30%.
+  
 -----------------------------------------
 Weekly Report 2020/2/19
   
