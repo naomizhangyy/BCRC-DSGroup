@@ -1,34 +1,9 @@
 Weekly Report 2020/3/4
   
-  Finished YOLO-Lite test.
+  Finished YOLO-Lite test, a simple test report has been uploaded.
   
-  YOLO-Lite Network Shape
-	    Input	Output	In channel	Out Channel
-	    
-CONV-0	226	224	        3	        16
-
-POOL-0	224	112	        16	      16
-CONV-1	114	112	        16      	32
-
-POOL-1	112	56	        32      	32
-
-CONV-2	58	56	        32	      64
-
-POOL-2	56	28	        64      	64
-
-CONV-3	30	28	        64	      128
-
-POOL-3	28	14	        128	      128
-
-CONV-4	16	14	        128     	128
-
-POOL-4	14	7	          128     	128
-
-CONV-5	9	  7	          128	      256
-
-CONV-6	7	  7	          256	      125
-
-
+  Now trying to fix Alexnet into DLA, and prepared for graduation paper.
+  
 -----------------------------------------------
 Weekly Report 2020/2/26
   
