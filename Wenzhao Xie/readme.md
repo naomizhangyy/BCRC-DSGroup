@@ -1,3 +1,22 @@
+Weekly Report 2020/3/11
+  
+  Quit mapping Alexnet into my DLA, for my DLA doesn't support the activation function of Alexnet, only ReLU supported. 
+  
+  Now I'm mapping VGG-16 into my project. I change the device from zc706 board to vcu118, which is of my intern company. The vcu118 board has larger BRAM.
+  
+  Finished 3 vgg16 convolution layer simulation. It takes almost one day to finish only 2 conv layer, the layers are too big.
+  
+  Here is a simply efficiency result record:
+  
+  CONV_0: 17.1%
+  
+  CONV_1: 83.3%
+  
+  CONV_2: 83.3%
+  
+  Start writing my graduation paper. I hope I can finish it untill 3/20.
+  
+-----------------------------------------------
 Weekly Report 2020/3/4
   
   Finished YOLO-Lite test, a simple test report has been uploaded.
