@@ -204,3 +204,8 @@ To do list:
 1.Read paper from FPGA 2020 "Reuse Kernels or Activations? A Flexible Dataflow for Low-latency Spectral CNN Acceleration"
 2.Read paper from ISSCC 2020 Session 14 "A 510nW, 0.41V Low-Memory, Low-Computation Keyword Spotting Chip using Serial FFT based MFCC and Binarized Depthwise Separable Convolutional Neural Network in 28nm CMOS", use its slides as reading note.
 3.Find a bug in Ling adder constructed in Virtuso, debugging.
+2020/03/11
+1.Fix the bug found last week.
+2.Reduce the pulse width of clock signal during pre-charge stage in order to increase the clock frequency(625ps now).
+3.Read paper "DARB: A Density-Adaptive Regular-Block Pruning for Deep Neural Networks".
+4.Read paper "A 65nm 24.7μJ/Frame 12.3mW Activation-Similarity-Aware Convolutional Neural Network Video Processor Using Hybrid Precision, Inter-Frame Data Reuse and Mixed-Bit-Width Difference-Frame Data Codec". Nor complete.
