@@ -209,3 +209,6 @@ To do list:
 2.Reduce the pulse width of clock signal during pre-charge stage in order to increase the clock frequency(625ps now).
 3.Read paper "DARB: A Density-Adaptive Regular-Block Pruning for Deep Neural Networks".
 4.Read paper "A 65nm 24.7μJ/Frame 12.3mW Activation-Similarity-Aware Convolutional Neural Network Video Processor Using Hybrid Precision, Inter-Frame Data Reuse and Mixed-Bit-Width Difference-Frame Data Codec". Nor complete.
+2020/03/18
+1.Modify the size of transistor to improve the latancy of adder.
+2.Compare the adder with the adder in paper and the adder synthesized by DC.
