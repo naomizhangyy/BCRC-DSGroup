@@ -1,3 +1,8 @@
+Weekly Report 2020/3/18
+
+  Write my graduation thesis, already done, now doing the final checking.
+
+-----------------------------------------------
 Weekly Report 2020/3/11
   
   Quit mapping Alexnet into my DLA, for my DLA doesn't support the activation function of Alexnet, only ReLU supported. 
