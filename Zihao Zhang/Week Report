@@ -212,3 +212,6 @@ To do list:
 2020/03/18
 1.Modify the size of transistor to improve the latancy of adder.
 2.Compare the adder with the adder in paper and the adder synthesized by DC.
+2020/03/25
+1.Use custom inverter to replace the inverter from digital library in order to improve the latency of adder.
+2.Count the number of MOSFET in the netlist got from Design Compiler.
