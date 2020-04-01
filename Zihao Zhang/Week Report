@@ -215,3 +215,5 @@ To do list:
 2020/03/25
 1.Use custom inverter to replace the inverter from digital library in order to improve the latency of adder.
 2.Count the number of MOSFET in the netlist got from Design Compiler.
+2020/04/01
+1.Read paper about variable latency speculative adder.
